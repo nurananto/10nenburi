@@ -1,0 +1,45 @@
+name: Auto Generate manga.json
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**/*.jpg'
+      - '**/*.jpeg'
+      - '**/*.png'
+      - '**/*.webp'
+      - 'manga-config.json'
+  workflow_dispatch:
+
+jobs:
+  generate-manga-json:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Generate manga.json
+        run: node generate-manga-json.js
+      
+      - name: Check for changes
+        id: check_changes
+        run: |
+          git diff --quiet manga.json || echo "changed=true" >> $GITHUB_OUTPUT
+      
+      - name: Commit and push if changed
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add manga.json
+          git commit -m "🤖 Auto-update manga.json"
+          git push

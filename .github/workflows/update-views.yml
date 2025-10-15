@@ -7,6 +7,13 @@ on:
   
   # Manual trigger
   workflow_dispatch:
+  
+  # OPTIONAL: Auto-trigger when pending-views.json updated
+  push:
+    branches:
+      - main
+    paths:
+      - 'pending-views.json'
 
 permissions:
   contents: write

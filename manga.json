@@ -201,6 +201,14 @@
       "views": 559,
       "uploadDate": "2025-10-18",
       "locked": false
+    },
+    "12.2": {
+      "title": "Chapter 12.2",
+      "folder": "6.5",
+      "pages": 0,
+      "views": 0,
+      "uploadDate": null,
+      "locked": true
     }
   },
   "lastUpdated": "2025-10-18T10:56:21.413Z"

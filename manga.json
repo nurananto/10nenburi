@@ -32,7 +32,7 @@
       "folder": "1",
       "pages": 45,
       "views": 1201,
-      "uploadDate": "2025-10-18",
+      "uploadDate": "2025-10-22",
       "locked": false
     },
     "2.1": {
@@ -40,7 +40,7 @@
       "folder": "2.1",
       "pages": 15,
       "views": 760,
-      "uploadDate": "2025-10-18",
+      "uploadDate": "2025-10-22",
       "locked": false
     },
     "2.2": {
@@ -48,7 +48,7 @@
       "folder": "2.2",
       "pages": 15,
       "views": 742,
-      "uploadDate": "2025-10-18",
+      "uploadDate": "2025-10-22",
       "locked": false
     },
     "3.1": {
@@ -56,7 +56,7 @@
       "folder": "3.1",
       "pages": 12,
       "views": 1260,
-      "uploadDate": "2025-10-18",
+      "uploadDate": "2025-10-22",
       "locked": false
     },
     "3.2": {
@@ -64,7 +64,7 @@
       "folder": "3.2",
       "pages": 12,
       "views": 682,
-      "uploadDate": "2025-10-18",
+      "uploadDate": "2025-10-22",
       "locked": false
     },
     "4.1": {
@@ -72,7 +72,7 @@
       "folder": "4.1",
       "pages": 10,
       "views": 1460,
-      "uploadDate": "2025-10-18",
+      "uploadDate": "2025-10-22",
       "locked": false
     },
     "4.2": {
@@ -80,7 +80,7 @@
       "folder": "4.2",
       "pages": 10,
       "views": 941,
-      "uploadDate": "2025-10-18",
+      "uploadDate": "2025-10-22",
       "locked": false
     },
     "5.1": {
@@ -88,7 +88,7 @@
       "folder": "5.1",
       "pages": 10,
       "views": 1473,
-      "uploadDate": "2025-10-18",
+      "uploadDate": "2025-10-22",
       "locked": false
     },
     "5.2": {
@@ -96,7 +96,7 @@
       "folder": "5.2",
       "pages": 10,
       "views": 979,
-      "uploadDate": "2025-10-18",
+      "uploadDate": "2025-10-22",
       "locked": false
     },
     "6.1": {
@@ -104,7 +104,7 @@
       "folder": "6.1",
       "pages": 10,
       "views": 579,
-      "uploadDate": "2025-10-18",
+      "uploadDate": "2025-10-22",
       "locked": false
     },
     "6.2": {
@@ -112,7 +112,7 @@
       "folder": "6.2",
       "pages": 10,
       "views": 593,
-      "uploadDate": "2025-10-18",
+      "uploadDate": "2025-10-22",
       "locked": false
     },
     "7.1": {
@@ -120,7 +120,7 @@
       "folder": "7.1",
       "pages": 11,
       "views": 713,
-      "uploadDate": "2025-10-18",
+      "uploadDate": "2025-10-22",
       "locked": false
     },
     "7.2": {
@@ -128,7 +128,7 @@
       "folder": "7.2",
       "pages": 10,
       "views": 1287,
-      "uploadDate": "2025-10-18",
+      "uploadDate": "2025-10-22",
       "locked": false
     },
     "8.1": {
@@ -136,7 +136,7 @@
       "folder": "8.1",
       "pages": 10,
       "views": 1033,
-      "uploadDate": "2025-10-18",
+      "uploadDate": "2025-10-22",
       "locked": false
     },
     "8.2": {
@@ -144,7 +144,7 @@
       "folder": "8.2",
       "pages": 10,
       "views": 787,
-      "uploadDate": "2025-10-18",
+      "uploadDate": "2025-10-22",
       "locked": false
     },
     "9.1": {
@@ -152,7 +152,7 @@
       "folder": "9.1",
       "pages": 10,
       "views": 949,
-      "uploadDate": "2025-10-18",
+      "uploadDate": "2025-10-22",
       "locked": false
     },
     "9.2": {
@@ -160,7 +160,7 @@
       "folder": "9.2",
       "pages": 10,
       "views": 609,
-      "uploadDate": "2025-10-18",
+      "uploadDate": "2025-10-22",
       "locked": false
     },
     "10.1": {
@@ -168,7 +168,7 @@
       "folder": "10.1",
       "pages": 10,
       "views": 719,
-      "uploadDate": "2025-10-18",
+      "uploadDate": "2025-10-22",
       "locked": false
     },
     "10.2": {
@@ -176,7 +176,7 @@
       "folder": "10.2",
       "pages": 10,
       "views": 1183,
-      "uploadDate": "2025-10-18",
+      "uploadDate": "2025-10-22",
       "locked": false
     },
     "11.1": {
@@ -184,7 +184,7 @@
       "folder": "11.1",
       "pages": 10,
       "views": 1115,
-      "uploadDate": "2025-10-18",
+      "uploadDate": "2025-10-22",
       "locked": false
     },
     "11.2": {
@@ -192,7 +192,7 @@
       "folder": "11.2",
       "pages": 10,
       "views": 592,
-      "uploadDate": "2025-10-18",
+      "uploadDate": "2025-10-22",
       "locked": false
     },
     "12.1": {
@@ -200,7 +200,7 @@
       "folder": "12.1",
       "pages": 10,
       "views": 848,
-      "uploadDate": "2025-10-18",
+      "uploadDate": "2025-10-22",
       "locked": false
     },
     "12.2": {
@@ -212,5 +212,5 @@
       "locked": true
     }
   },
-  "lastUpdated": "2025-10-18T11:19:55.832Z"
+  "lastUpdated": "2025-10-22T15:09:29.788Z"
 }

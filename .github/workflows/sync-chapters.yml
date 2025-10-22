@@ -1,0 +1,46 @@
+name: Sync Chapters to Pending Views
+
+on:
+  # Trigger saat manga.json berubah
+  push:
+    branches:
+      - main
+    paths:
+      - 'manga.json'
+  
+  # Manual trigger
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync-chapters:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Sync chapters with manga.json
+        run: node sync-pending-chapters.js
+      
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          
+          # Check if pending-chapter-views.json changed
+          if git diff --quiet pending-chapter-views.json; then
+            echo "✅ No changes to commit"
+          else
+            git add pending-chapter-views.json
+            git commit -m "Auto-sync chapters from manga.json [skip ci]"
+            git push
+            echo "✅ Chapters synced and committed!"
+          fi

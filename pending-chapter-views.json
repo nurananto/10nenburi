@@ -1,22 +1,120 @@
 {
-  "chapters": {},
-  "lastUpdated": "2025-10-24T00:00:00.000Z"
+  "chapters": {
+    "1": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-10-23T17:53:18.591Z",
+      "lastUpdate": "2025-10-23T17:53:18.591Z"
+    },
+    "2.1": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-10-23T17:53:18.591Z",
+      "lastUpdate": "2025-10-23T17:53:18.591Z"
+    },
+    "2.2": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-10-23T17:53:18.591Z",
+      "lastUpdate": "2025-10-23T17:53:18.591Z"
+    },
+    "3.1": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-10-23T17:53:18.591Z",
+      "lastUpdate": "2025-10-23T17:53:18.591Z"
+    },
+    "3.2": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-10-23T17:53:18.591Z",
+      "lastUpdate": "2025-10-23T17:53:18.591Z"
+    },
+    "4.1": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-10-23T17:53:18.591Z",
+      "lastUpdate": "2025-10-23T17:53:18.591Z"
+    },
+    "4.2": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-10-23T17:53:18.591Z",
+      "lastUpdate": "2025-10-23T17:53:18.591Z"
+    },
+    "5.1": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-10-23T17:53:18.591Z",
+      "lastUpdate": "2025-10-23T17:53:18.591Z"
+    },
+    "5.2": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-10-23T17:53:18.591Z",
+      "lastUpdate": "2025-10-23T17:53:18.591Z"
+    },
+    "6.1": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-10-23T17:53:18.591Z",
+      "lastUpdate": "2025-10-23T17:53:18.591Z"
+    },
+    "6.2": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-10-23T17:53:18.592Z",
+      "lastUpdate": "2025-10-23T17:53:18.592Z"
+    },
+    "7.1": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-10-23T17:53:18.592Z",
+      "lastUpdate": "2025-10-23T17:53:18.592Z"
+    },
+    "7.2": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-10-23T17:53:18.592Z",
+      "lastUpdate": "2025-10-23T17:53:18.592Z"
+    },
+    "8.1": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-10-23T17:53:18.592Z",
+      "lastUpdate": "2025-10-23T17:53:18.592Z"
+    },
+    "8.2": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-10-23T17:53:18.592Z",
+      "lastUpdate": "2025-10-23T17:53:18.592Z"
+    },
+    "9.1": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-10-23T17:53:18.592Z",
+      "lastUpdate": "2025-10-23T17:53:18.592Z"
+    },
+    "9.2": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-10-23T17:53:18.592Z",
+      "lastUpdate": "2025-10-23T17:53:18.592Z"
+    },
+    "10.1": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-10-23T17:53:18.592Z",
+      "lastUpdate": "2025-10-23T17:53:18.592Z"
+    },
+    "10.2": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-10-23T17:53:18.592Z",
+      "lastUpdate": "2025-10-23T17:53:18.592Z"
+    },
+    "11.1": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-10-23T17:53:18.592Z",
+      "lastUpdate": "2025-10-23T17:53:18.592Z"
+    },
+    "11.2": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-10-23T17:53:18.592Z",
+      "lastUpdate": "2025-10-23T17:53:18.592Z"
+    },
+    "12.1": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-10-23T17:53:18.592Z",
+      "lastUpdate": "2025-10-23T17:53:18.592Z"
+    },
+    "12.2": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-10-23T17:53:18.592Z",
+      "lastUpdate": "2025-10-23T17:53:18.592Z"
+    }
+  },
+  "lastUpdated": "2025-10-23T17:53:18.592Z"
 }
-```
-
-**Note:** Ganti timestamp dengan waktu sekarang atau biarkan saja (akan diupdate otomatis nanti).
-
----
-
-## ⚠️ **Error yang Akan Muncul Jika Tidak Ada**
-
-Jika pending files tidak dibuat, GitHub Actions akan error:
-```
-❌ Error updating views: Error: ENOENT: no such file or directory, 
-   open 'pending-views.json'
-```
-
-Atau:
-```
-❌ Error updating chapter views: Error: ENOENT: no such file or directory, 
-   open 'pending-chapter-views.json'

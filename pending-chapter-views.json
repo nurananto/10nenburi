@@ -106,9 +106,9 @@
       "lastUpdate": "2025-10-23T17:53:18.592Z"
     },
     "12.1": {
-      "pendingViews": 10,
+      "pendingViews": 0,
       "lastIncrement": "2025-10-24T20:31:35.535Z",
-      "lastUpdate": "2025-10-23T17:53:18.592Z"
+      "lastUpdate": "2025-10-25T01:44:34.752Z"
     },
     "12.2": {
       "pendingViews": 8,
@@ -116,5 +116,5 @@
       "lastUpdate": "2025-10-23T17:53:18.592Z"
     }
   },
-  "lastUpdated": "2025-10-24T21:45:06.215Z"
+  "lastUpdated": "2025-10-25T01:44:34.677Z"
 }

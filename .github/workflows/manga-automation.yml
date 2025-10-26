@@ -1,7 +1,6 @@
 name: Manga Automation
 
 on:
-  # Trigger 1: Detect new files atau perubahan
   push:
     branches:
       - main
@@ -12,11 +11,9 @@ on:
       - '**/*.webp'
       - 'manga-config.json'
   
-  # Trigger 2: Schedule SETIAP 1 HARI (jam 00:00 UTC)
   schedule:
     - cron: '0 0 * * *'
   
-  # Trigger 3: Manual trigger (untuk testing)
   workflow_dispatch:
 
 permissions:
@@ -42,6 +39,7 @@ jobs:
           import os
           import json
           import subprocess
+          import re
           from datetime import datetime
 
           print("🚀 Starting manga automation with Git timestamps...")
@@ -59,7 +57,6 @@ jobs:
                   commit_date = result.stdout.strip()
                   
                   if commit_date:
-                      print(f"  ✅ {folder_path}: {commit_date}")
                       return commit_date
                   else:
                       result = subprocess.run(
@@ -70,52 +67,72 @@ jobs:
                       )
                       first_commit = result.stdout.strip().split('\n')[0]
                       if first_commit:
-                          print(f"  ⚠️  {folder_path}: Using first commit: {first_commit}")
                           return first_commit
                       else:
-                          fallback = datetime.utcnow().isoformat() + 'Z'
-                          print(f"  ⚠️  {folder_path}: No history, using: {fallback}")
-                          return fallback
+                          return datetime.utcnow().isoformat() + 'Z'
                       
               except Exception as e:
-                  print(f"  ❌ Error for {folder_path}: {e}")
-                  fallback = datetime.utcnow().isoformat() + 'Z'
-                  return fallback
+                  print(f"  ⚠️  Error getting git date for {folder_path}: {e}")
+                  return datetime.utcnow().isoformat() + 'Z'
+
+          def is_chapter_folder(folder_name):
+              """Check if folder is a chapter (supports: 1, 2, 1.1, 1.2, 2.1, etc)"""
+              # Match: pure numbers (1, 2, 3) or decimal (1.1, 2.5, 10.2)
+              pattern = r'^\d+(\.\d+)?$'
+              return re.match(pattern, folder_name) is not None
+
+          def parse_chapter_number(folder_name):
+              """Parse chapter number from folder name (supports decimals)"""
+              try:
+                  return float(folder_name)
+              except:
+                  return 0.0
 
           # Scan directories for chapters
-          print("📂 Scanning for chapters...")
+          print("📂 Scanning for chapters (supports decimal numbers)...")
           chapters = {}
           chapter_list = []
           
           for item in sorted(os.listdir('.')):
-              if os.path.isdir(item) and item.isdigit():
-                  chapter_num = int(item)
+              if os.path.isdir(item) and is_chapter_folder(item):
+                  chapter_num = parse_chapter_number(item)
                   upload_date = get_git_commit_date(item)
                   
                   image_files = [f for f in os.listdir(item) 
                                 if f.lower().endswith(('.jpg', '.jpeg', '.png', '.webp'))]
                   
+                  # Title: "Chapter 1" or "Chapter 1.1" etc
+                  if chapter_num.is_integer():
+                      title = f"Chapter {int(chapter_num)}"
+                      chapter_key = str(int(chapter_num))
+                  else:
+                      title = f"Chapter {chapter_num}"
+                      chapter_key = str(chapter_num)
+                  
                   chapter_data = {
-                      "title": f"Chapter {chapter_num}",
+                      "title": title,
                       "chapter": chapter_num,
                       "uploadDate": upload_date,
                       "totalPages": len(image_files),
                       "locked": False
                   }
                   
-                  chapters[str(chapter_num)] = chapter_data
+                  chapters[chapter_key] = chapter_data
                   chapter_list.append(chapter_data)
-                  print(f"  📖 Chapter {chapter_num}: {len(image_files)} pages")
+                  print(f"  ✅ {item}: {title} ({len(image_files)} pages) - {upload_date}")
           
           print("")
           print(f"✅ Found {len(chapter_list)} chapters")
           
+          # Sort chapters by number (descending - newest first)
           chapter_list.sort(key=lambda x: x['chapter'], reverse=True)
           
           last_chapter_update = None
           if chapter_list:
               last_chapter_update = chapter_list[0]['uploadDate']
               print(f"📅 Last chapter update: {last_chapter_update}")
+          else:
+              print("⚠️  No chapters found!")
           
           repo_name = os.path.basename(os.getcwd())
           
@@ -146,7 +163,9 @@ jobs:
           print("")
           print("=" * 50)
           print(f"Manga: {repo_name}")
-          print(f"Chapters: {len(chapter_list)}")
+          print(f"Total Chapters: {len(chapter_list)}")
+          if chapter_list:
+              print(f"Latest Chapter: {chapter_list[0]['title']}")
           print(f"Last Update: {last_chapter_update}")
           print("=" * 50)
           PYTHON_SCRIPT

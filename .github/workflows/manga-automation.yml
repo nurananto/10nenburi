@@ -6,15 +6,15 @@ on:
     branches:
       - main
     paths:
-      - '**/*.jpg'      # Detect gambar baru (JPG)
-      - '**/*.jpeg'     # Detect gambar baru (JPEG)
-      - '**/*.png'      # Detect gambar baru (PNG)
-      - '**/*.webp'     # Detect gambar baru (WEBP)
-      - 'manga-config.json'  # Config berubah
+      - '**/*.jpg'
+      - '**/*.jpeg'
+      - '**/*.png'
+      - '**/*.webp'
+      - 'manga-config.json'
   
   # Trigger 2: Schedule SETIAP 1 HARI (jam 00:00 UTC)
   schedule:
-    - cron: '0 0 * * *'  # Setiap hari jam 00:00 UTC (07:00 WIB)
+    - cron: '0 0 * * *'
   
   # Trigger 3: Manual trigger (untuk testing)
   workflow_dispatch:
@@ -29,17 +29,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          fetch-depth: 0  # CRITICAL: Fetch all history for git log!
+          fetch-depth: 0
       
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
       
-      # ============================================
-      # UNIFIED STEP: Generate manga.json & chapters.json
-      # Uses Git commit dates (NOT current date!)
-      # ============================================
       - name: Generate manga.json and chapters.json with Git timestamps
         run: |
           python3 << 'PYTHON_SCRIPT'
@@ -52,9 +48,8 @@ jobs:
           print("")
 
           def get_git_commit_date(folder_path):
-              """Get Git commit date for a specific folder (NOT current date!)"""
+              """Get Git commit date for a specific folder"""
               try:
-                  # Get last commit date for this folder
                   result = subprocess.run(
                       ['git', 'log', '-1', '--format=%aI', '--', folder_path],
                       capture_output=True,
@@ -67,7 +62,6 @@ jobs:
                       print(f"  ✅ {folder_path}: {commit_date}")
                       return commit_date
                   else:
-                      # Fallback: get first commit of this folder
                       result = subprocess.run(
                           ['git', 'log', '--reverse', '--format=%aI', '--', folder_path],
                           capture_output=True,
@@ -76,17 +70,16 @@ jobs:
                       )
                       first_commit = result.stdout.strip().split('\n')[0]
                       if first_commit:
-                          print(f"  ⚠️  {folder_path}: Using first commit date: {first_commit}")
+                          print(f"  ⚠️  {folder_path}: Using first commit: {first_commit}")
                           return first_commit
                       else:
                           fallback = datetime.utcnow().isoformat() + 'Z'
-                          print(f"  ⚠️  {folder_path}: No git history, using current: {fallback}")
+                          print(f"  ⚠️  {folder_path}: No history, using: {fallback}")
                           return fallback
                       
               except Exception as e:
-                  print(f"  ❌ Error getting git date for {folder_path}: {e}")
+                  print(f"  ❌ Error for {folder_path}: {e}")
                   fallback = datetime.utcnow().isoformat() + 'Z'
-                  print(f"     Using fallback: {fallback}")
                   return fallback
 
           # Scan directories for chapters
@@ -97,128 +90,88 @@ jobs:
           for item in sorted(os.listdir('.')):
               if os.path.isdir(item) and item.isdigit():
                   chapter_num = int(item)
-                  
-                  # Get Git commit date for this chapter folder
                   upload_date = get_git_commit_date(item)
                   
-                  # Count images
                   image_files = [f for f in os.listdir(item) 
                                 if f.lower().endswith(('.jpg', '.jpeg', '.png', '.webp'))]
                   
                   chapter_data = {
                       "title": f"Chapter {chapter_num}",
                       "chapter": chapter_num,
-                      "uploadDate": upload_date,  # ← Git commit date!
+                      "uploadDate": upload_date,
                       "totalPages": len(image_files),
-                      "locked": False  # Default unlocked
+                      "locked": False
                   }
                   
                   chapters[str(chapter_num)] = chapter_data
                   chapter_list.append(chapter_data)
-                  
-                  print(f"  📖 Chapter {chapter_num}: {len(image_files)} pages, uploaded {upload_date}")
+                  print(f"  📖 Chapter {chapter_num}: {len(image_files)} pages")
           
           print("")
           print(f"✅ Found {len(chapter_list)} chapters")
-          print("")
           
-          # Sort chapters by number (descending)
           chapter_list.sort(key=lambda x: x['chapter'], reverse=True)
           
-          # Get lastChapterUpdate from newest chapter
           last_chapter_update = None
           if chapter_list:
-              # Use the ACTUAL Git commit date of the newest chapter
               last_chapter_update = chapter_list[0]['uploadDate']
               print(f"📅 Last chapter update: {last_chapter_update}")
-          else:
-              print("⚠️  No chapters found!")
           
-          # Get repo name (for title)
           repo_name = os.path.basename(os.getcwd())
           
-          # Create manga.json
           manga_data = {
               "manga": {
                   "title": repo_name,
                   "cover": "cover.jpg",
-                  "views": 0  # Default views
+                  "views": 0
               },
               "lastChapterUpdate": last_chapter_update,
-              "lastUpdated": datetime.utcnow().isoformat() + 'Z',  # Metadata update time
+              "lastUpdated": datetime.utcnow().isoformat() + 'Z',
               "chapters": chapters
           }
           
-          # Create chapters.json (for website)
           chapters_data = {
               "chapters": chapter_list
           }
           
-          # Write manga.json
           print("")
-          print("💾 Writing manga.json...")
+          print("💾 Writing files...")
           with open('manga.json', 'w', encoding='utf-8') as f:
               json.dump(manga_data, f, indent=2, ensure_ascii=False)
-          print("  ✅ manga.json created")
           
-          # Write chapters.json
-          print("💾 Writing chapters.json...")
           with open('chapters.json', 'w', encoding='utf-8') as f:
               json.dump(chapters_data, f, indent=2, ensure_ascii=False)
-          print("  ✅ chapters.json created")
           
+          print("✅ Files created successfully!")
           print("")
           print("=" * 50)
-          print("📊 SUMMARY")
-          print("=" * 50)
           print(f"Manga: {repo_name}")
-          print(f"Total Chapters: {len(chapter_list)}")
-          print(f"Last Chapter Update: {last_chapter_update}")
-          print(f"Metadata Updated: {manga_data['lastUpdated']}")
+          print(f"Chapters: {len(chapter_list)}")
+          print(f"Last Update: {last_chapter_update}")
           print("=" * 50)
-          
           PYTHON_SCRIPT
       
-      # ============================================
-      # OPTIONAL: Views tracking (if you have this feature)
-      # Comment out if not needed
-      # ============================================
-      # - name: Update manga views (optional)
-      #   run: |
-      #     echo "📊 Checking manga views..."
-      #     # Add your views tracking logic here
-      #     # Or use manga-automation.js if you have it
-      
-      # ============================================
-      # Commit and push changes
-      # ============================================
       - name: Commit and push changes
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           
-          # Pull latest changes first
           git pull origin main --rebase || true
-          
-          # Add generated files
           git add manga.json chapters.json 2>/dev/null || true
           
-          # Check if there are changes to commit
           if git diff --staged --quiet; then
             echo "✅ No changes to commit"
           else
-            # Determine commit message based on trigger
             if [ "${{ github.event_name }}" = "push" ]; then
-              COMMIT_MSG="📚 Auto-update manga data (new files detected) [skip ci]"
+              COMMIT_MSG="📚 Auto-update manga data [skip ci]"
             elif [ "${{ github.event_name }}" = "schedule" ]; then
-              COMMIT_MSG="📊 Daily update: metadata refresh [skip ci]"
+              COMMIT_MSG="📊 Daily metadata refresh [skip ci]"
             else
               COMMIT_MSG="📄 Manual update [skip ci]"
             fi
             
             git commit -m "$COMMIT_MSG"
             
-            # Retry push if failed (with exponential backoff)
             max_retries=3
             count=0
             until git push origin main; do
@@ -227,22 +180,14 @@ jobs:
                 echo "❌ Failed to push after $max_retries attempts"
                 exit 1
               fi
-              echo "⚠️  Push failed, retrying in 5 seconds... (attempt $count/$max_retries)"
+              echo "⚠️  Retrying push... (attempt $count/$max_retries)"
               sleep 5
               git pull origin main --rebase
             done
             
             echo "✅ Successfully pushed changes"
-            
-            # Show what was updated
-            echo ""
-            echo "📋 Updated files:"
-            git diff --staged --name-only
           fi
       
-      # ============================================
-      # Summary
-      # ============================================
       - name: Show Summary
         if: always()
         run: |
@@ -256,15 +201,13 @@ jobs:
           
           if [ -f manga.json ]; then
             echo "📊 Manga Stats:"
-            python3 -c "
-import json
-with open('manga.json') as f:
-    data = json.load(f)
-    print(f\"  Title: {data['manga']['title']}\")
-    print(f\"  Total Chapters: {len(data['chapters'])}\")
-    print(f\"  Last Chapter Update: {data.get('lastChapterUpdate', 'N/A')}\")
-    print(f\"  Metadata Updated: {data.get('lastUpdated', 'N/A')}\")
-            "
+            MANGA_TITLE=$(jq -r '.manga.title' manga.json)
+            TOTAL_CHAPTERS=$(jq '.chapters | length' manga.json)
+            LAST_UPDATE=$(jq -r '.lastChapterUpdate // "N/A"' manga.json)
+            
+            echo "  Title: $MANGA_TITLE"
+            echo "  Total Chapters: $TOTAL_CHAPTERS"
+            echo "  Last Update: $LAST_UPDATE"
           fi
           
           echo "╚════════════════════════════════════════╝"

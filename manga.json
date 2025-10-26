@@ -4,14 +4,168 @@
     "cover": "cover.jpg",
     "views": 0
   },
-  "lastChapterUpdate": "2025-10-16T01:27:54+07:00",
-  "lastUpdated": "2025-10-26T11:53:59.761784Z",
+  "lastChapterUpdate": "2025-10-25T19:07:06+07:00",
+  "lastUpdated": "2025-10-26T11:58:47.809655Z",
   "chapters": {
     "1": {
       "title": "Chapter 1",
-      "chapter": 1,
+      "chapter": 1.0,
       "uploadDate": "2025-10-16T01:27:54+07:00",
       "totalPages": 45,
+      "locked": false
+    },
+    "10.1": {
+      "title": "Chapter 10.1",
+      "chapter": 10.1,
+      "uploadDate": "2025-10-16T01:27:54+07:00",
+      "totalPages": 10,
+      "locked": false
+    },
+    "10.2": {
+      "title": "Chapter 10.2",
+      "chapter": 10.2,
+      "uploadDate": "2025-10-16T01:27:54+07:00",
+      "totalPages": 10,
+      "locked": false
+    },
+    "11.1": {
+      "title": "Chapter 11.1",
+      "chapter": 11.1,
+      "uploadDate": "2025-10-16T01:27:54+07:00",
+      "totalPages": 10,
+      "locked": false
+    },
+    "11.2": {
+      "title": "Chapter 11.2",
+      "chapter": 11.2,
+      "uploadDate": "2025-10-16T01:27:54+07:00",
+      "totalPages": 10,
+      "locked": false
+    },
+    "12.1": {
+      "title": "Chapter 12.1",
+      "chapter": 12.1,
+      "uploadDate": "2025-10-18T17:55:09+07:00",
+      "totalPages": 10,
+      "locked": false
+    },
+    "12.2": {
+      "title": "Chapter 12.2",
+      "chapter": 12.2,
+      "uploadDate": "2025-10-25T19:07:06+07:00",
+      "totalPages": 10,
+      "locked": false
+    },
+    "2.1": {
+      "title": "Chapter 2.1",
+      "chapter": 2.1,
+      "uploadDate": "2025-10-16T01:27:54+07:00",
+      "totalPages": 15,
+      "locked": false
+    },
+    "2.2": {
+      "title": "Chapter 2.2",
+      "chapter": 2.2,
+      "uploadDate": "2025-10-16T01:27:54+07:00",
+      "totalPages": 15,
+      "locked": false
+    },
+    "3.1": {
+      "title": "Chapter 3.1",
+      "chapter": 3.1,
+      "uploadDate": "2025-10-16T01:27:54+07:00",
+      "totalPages": 12,
+      "locked": false
+    },
+    "3.2": {
+      "title": "Chapter 3.2",
+      "chapter": 3.2,
+      "uploadDate": "2025-10-16T01:27:54+07:00",
+      "totalPages": 12,
+      "locked": false
+    },
+    "4.1": {
+      "title": "Chapter 4.1",
+      "chapter": 4.1,
+      "uploadDate": "2025-10-16T01:27:54+07:00",
+      "totalPages": 10,
+      "locked": false
+    },
+    "4.2": {
+      "title": "Chapter 4.2",
+      "chapter": 4.2,
+      "uploadDate": "2025-10-16T01:27:54+07:00",
+      "totalPages": 10,
+      "locked": false
+    },
+    "5.1": {
+      "title": "Chapter 5.1",
+      "chapter": 5.1,
+      "uploadDate": "2025-10-16T01:27:54+07:00",
+      "totalPages": 10,
+      "locked": false
+    },
+    "5.2": {
+      "title": "Chapter 5.2",
+      "chapter": 5.2,
+      "uploadDate": "2025-10-16T01:27:54+07:00",
+      "totalPages": 10,
+      "locked": false
+    },
+    "6.1": {
+      "title": "Chapter 6.1",
+      "chapter": 6.1,
+      "uploadDate": "2025-10-16T01:27:54+07:00",
+      "totalPages": 10,
+      "locked": false
+    },
+    "6.2": {
+      "title": "Chapter 6.2",
+      "chapter": 6.2,
+      "uploadDate": "2025-10-16T01:27:54+07:00",
+      "totalPages": 10,
+      "locked": false
+    },
+    "7.1": {
+      "title": "Chapter 7.1",
+      "chapter": 7.1,
+      "uploadDate": "2025-10-16T01:27:54+07:00",
+      "totalPages": 11,
+      "locked": false
+    },
+    "7.2": {
+      "title": "Chapter 7.2",
+      "chapter": 7.2,
+      "uploadDate": "2025-10-16T01:27:54+07:00",
+      "totalPages": 10,
+      "locked": false
+    },
+    "8.1": {
+      "title": "Chapter 8.1",
+      "chapter": 8.1,
+      "uploadDate": "2025-10-16T01:27:54+07:00",
+      "totalPages": 10,
+      "locked": false
+    },
+    "8.2": {
+      "title": "Chapter 8.2",
+      "chapter": 8.2,
+      "uploadDate": "2025-10-16T01:27:54+07:00",
+      "totalPages": 10,
+      "locked": false
+    },
+    "9.1": {
+      "title": "Chapter 9.1",
+      "chapter": 9.1,
+      "uploadDate": "2025-10-16T01:27:54+07:00",
+      "totalPages": 10,
+      "locked": false
+    },
+    "9.2": {
+      "title": "Chapter 9.2",
+      "chapter": 9.2,
+      "uploadDate": "2025-10-16T01:27:54+07:00",
+      "totalPages": 10,
       "locked": false
     }
   }

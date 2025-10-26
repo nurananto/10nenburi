@@ -190,7 +190,7 @@
       "title": "Chapter 11.2",
       "folder": "11.2",
       "pages": 10,
-      "views": 0,
+      "views": 10,
       "uploadDate": "2025-10-26",
       "locked": false
     },
@@ -198,7 +198,7 @@
       "title": "Chapter 12.1",
       "folder": "12.1",
       "pages": 10,
-      "views": 10,
+      "views": 24,
       "uploadDate": "2025-10-26",
       "locked": false
     },
@@ -219,5 +219,6 @@
       "locked": true
     }
   },
-  "lastUpdated": "2025-10-26T01:53:23.490Z"
+  "lastUpdated": "2025-10-26T08:29:13.657Z",
+  "lastChapterUpdate": "2025-10-26T01:53:23.490Z"
 }

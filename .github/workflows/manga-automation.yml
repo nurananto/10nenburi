@@ -185,40 +185,57 @@ jobs:
                   if latest_date is None or ch_date > latest_date:
                       latest_date = ch_date
           
+          print(f"🔍 Debug: Latest date found: {latest_date}")
+          
           # Update locked chapters with null uploadDate to use latest date
           if latest_date:
               print("")
               print("📅 Updating locked chapters with null uploadDate...")
+              updated_count = 0
               for chapter_key, chapter_data in chapters_dict.items():
-                  if chapter_data.get('locked', False) and not chapter_data.get('uploadDate'):
+                  current_date = chapter_data.get('uploadDate')
+                  is_locked = chapter_data.get('locked', False)
+                  print(f"  🔍 Debug: {chapter_key} - locked={is_locked}, uploadDate={current_date}, type={type(current_date)}")
+                  if is_locked and current_date is None:
                       chapter_data['uploadDate'] = latest_date
+                      updated_count += 1
                       print(f"  ✅ {chapter_data['title']}: uploadDate updated to {latest_date}")
               
               # Also update in chapter_list
               for chapter_data in chapter_list:
-                  if chapter_data.get('locked', False) and not chapter_data.get('uploadDate'):
+                  if chapter_data.get('locked', False) and chapter_data.get('uploadDate') is None:
                       chapter_data['uploadDate'] = latest_date
+              
+              print(f"✅ Updated {updated_count} locked chapters")
+          else:
+              print("⚠️  No valid date found to update locked chapters")
           
           # ============================================
           # STEP 4: Sort chapters by UPLOAD DATE (DESC) for chapters.json
           # ============================================
-          # Sort by uploadDate if available, otherwise by chapter number
-          # Handle None values for locked chapters
+          # Sort by uploadDate (DESC), then by chapter number (ASC)
+          # When dates are the same, chapters appear in correct numeric order
           def sort_key(chapter):
               upload_date = chapter.get('uploadDate')
               # Convert None to empty string for sorting
               if upload_date is None:
                   upload_date = ''
               chapter_num = chapter.get('chapter', 0)
-              return (upload_date, -chapter_num)
+              # For DESC date but ASC chapter: negate date comparison
+              # Since we can't negate strings, we'll do two-pass sort
+              return (upload_date, chapter_num)
           
-          chapter_list.sort(key=sort_key, reverse=True)
+          # Sort by chapter number first (ASC)
+          chapter_list.sort(key=lambda x: x.get('chapter', 0))
+          # Then stable sort by date (DESC) - this preserves chapter order for same dates
+          chapter_list.sort(key=lambda x: x.get('uploadDate') or '', reverse=True)
           
           # Get last chapter update
           last_chapter_update = None
           if chapter_list:
-              last_chapter_update = chapter_list[0]['uploadDate']
-              print(f"📅 Last chapter update: {last_chapter_update}")
+              last_chapter_update = chapter_list[0].get('uploadDate')
+              if last_chapter_update:
+                  print(f"📅 Last chapter update: {last_chapter_update}")
           
           # ============================================
           # STEP 5: Build manga.json (PRESERVE ALL METADATA!)

@@ -175,13 +175,44 @@ jobs:
           print(f"✅ Total chapters: {len(chapter_list)} ({len(scanned_keys)} on disk + {locked_count} locked)")
           
           # ============================================
+          # STEP 3.5: Update null uploadDate for locked chapters
+          # ============================================
+          # Find the latest uploadDate from chapters on disk
+          latest_date = None
+          for ch in chapter_list:
+              ch_date = ch.get('uploadDate')
+              if ch_date and ch_date != 'null':
+                  if latest_date is None or ch_date > latest_date:
+                      latest_date = ch_date
+          
+          # Update locked chapters with null uploadDate to use latest date
+          if latest_date:
+              print("")
+              print("📅 Updating locked chapters with null uploadDate...")
+              for chapter_key, chapter_data in chapters_dict.items():
+                  if chapter_data.get('locked', False) and not chapter_data.get('uploadDate'):
+                      chapter_data['uploadDate'] = latest_date
+                      print(f"  ✅ {chapter_data['title']}: uploadDate updated to {latest_date}")
+              
+              # Also update in chapter_list
+              for chapter_data in chapter_list:
+                  if chapter_data.get('locked', False) and not chapter_data.get('uploadDate'):
+                      chapter_data['uploadDate'] = latest_date
+          
+          # ============================================
           # STEP 4: Sort chapters by UPLOAD DATE (DESC) for chapters.json
           # ============================================
           # Sort by uploadDate if available, otherwise by chapter number
-          chapter_list.sort(key=lambda x: (
-              x.get('uploadDate', ''),  # Primary: upload date
-              -x.get('chapter', 0)       # Secondary: chapter number (DESC)
-          ), reverse=True)
+          # Handle None values for locked chapters
+          def sort_key(chapter):
+              upload_date = chapter.get('uploadDate')
+              # Convert None to empty string for sorting
+              if upload_date is None:
+                  upload_date = ''
+              chapter_num = chapter.get('chapter', 0)
+              return (upload_date, -chapter_num)
+          
+          chapter_list.sort(key=sort_key, reverse=True)
           
           # Get last chapter update
           last_chapter_update = None
@@ -248,9 +279,11 @@ jobs:
           print(f"  - On disk: {len(scanned_keys)}")
           print(f"  - Locked (preserved): {locked_count}")
           if chapter_list:
-              print(f"Latest: {chapter_list[0]['title']} (uploaded: {chapter_list[0].get('uploadDate', 'N/A')})")
-              print(f"Oldest: {chapter_list[-1]['title']} (uploaded: {chapter_list[-1].get('uploadDate', 'N/A')})")
-          print(f"Last Update: {last_chapter_update}")
+              first_date = chapter_list[0].get('uploadDate', 'N/A')
+              last_date = chapter_list[-1].get('uploadDate', 'N/A')
+              print(f"Latest: {chapter_list[0]['title']} (uploaded: {first_date if first_date else 'N/A'})")
+              print(f"Oldest: {chapter_list[-1]['title']} (uploaded: {last_date if last_date else 'N/A'})")
+          print(f"Last Update: {last_chapter_update if last_chapter_update else 'N/A'}")
           
           # Show preserved metadata
           preserved_fields = []

@@ -185,19 +185,30 @@ jobs:
                   if latest_date is None or ch_date > latest_date:
                       latest_date = ch_date
           
+          print(f"🔍 Debug: Latest date found: {latest_date}")
+          
           # Update locked chapters with null uploadDate to use latest date
           if latest_date:
               print("")
               print("📅 Updating locked chapters with null uploadDate...")
+              updated_count = 0
               for chapter_key, chapter_data in chapters_dict.items():
-                  if chapter_data.get('locked', False) and not chapter_data.get('uploadDate'):
+                  current_date = chapter_data.get('uploadDate')
+                  is_locked = chapter_data.get('locked', False)
+                  print(f"  🔍 Debug: {chapter_key} - locked={is_locked}, uploadDate={current_date}, type={type(current_date)}")
+                  if is_locked and current_date is None:
                       chapter_data['uploadDate'] = latest_date
+                      updated_count += 1
                       print(f"  ✅ {chapter_data['title']}: uploadDate updated to {latest_date}")
               
               # Also update in chapter_list
               for chapter_data in chapter_list:
-                  if chapter_data.get('locked', False) and not chapter_data.get('uploadDate'):
+                  if chapter_data.get('locked', False) and chapter_data.get('uploadDate') is None:
                       chapter_data['uploadDate'] = latest_date
+              
+              print(f"✅ Updated {updated_count} locked chapters")
+          else:
+              print("⚠️  No valid date found to update locked chapters")
           
           # ============================================
           # STEP 4: Sort chapters by UPLOAD DATE (DESC) for chapters.json
@@ -217,8 +228,9 @@ jobs:
           # Get last chapter update
           last_chapter_update = None
           if chapter_list:
-              last_chapter_update = chapter_list[0]['uploadDate']
-              print(f"📅 Last chapter update: {last_chapter_update}")
+              last_chapter_update = chapter_list[0].get('uploadDate')
+              if last_chapter_update:
+                  print(f"📅 Last chapter update: {last_chapter_update}")
           
           # ============================================
           # STEP 5: Build manga.json (PRESERVE ALL METADATA!)

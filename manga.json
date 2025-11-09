@@ -13,7 +13,7 @@
       "Slice of Life"
     ],
     "status": "Ongoing",
-    "views": 348,
+    "views": 356,
     "links": {
       "mangadex": "https://mangadex.org/title/26854d1a-dfd0-4e5c-b6d1-ab291035b8cc/10-nen-buri-ni-saikai-shita-kusogaki-wa-seijun-bishoujo-jk-ni-seichou-shiteita",
       "raw": "https://comic-gardo.com/episode/2550912965031159065"
@@ -21,7 +21,9 @@
     "repoUrl": "https://raw.githubusercontent.com/nurananto/10nenburi/main/",
     "imagePrefix": "Image",
     "imageFormat": "jpg",
-    "lockedChapters": []
+    "lockedChapters": [
+      "13.2"
+    ]
   },
   "chapters": {
     "1": {
@@ -232,7 +234,7 @@
       "totalPages": 10,
       "pages": 10,
       "locked": false,
-      "views": 23
+      "views": 24
     },
     "12.1": {
       "title": "Chapter 12.1",
@@ -242,7 +244,7 @@
       "totalPages": 10,
       "pages": 10,
       "locked": false,
-      "views": 45
+      "views": 46
     },
     "12.2": {
       "title": "Chapter 12.2",
@@ -252,7 +254,7 @@
       "totalPages": 10,
       "pages": 10,
       "locked": false,
-      "views": 112
+      "views": 113
     },
     "13.1": {
       "title": "Chapter 13.1",
@@ -262,9 +264,19 @@
       "totalPages": 10,
       "pages": 10,
       "locked": false,
-      "views": 80
+      "views": 84
+    },
+    "13.2": {
+      "title": "Chapter 13.2",
+      "chapter": 13.2,
+      "folder": "13.2",
+      "uploadDate": "2025-11-09T17:03:55+07:00",
+      "totalPages": 0,
+      "pages": 0,
+      "locked": true,
+      "views": 0
     }
   },
-  "lastUpdated": "2025-11-09T13:54:54+07:00",
-  "lastChapterUpdate": "2025-11-09T13:49:41+07:00"
+  "lastUpdated": "2025-11-09T17:03:55+07:00",
+  "lastChapterUpdate": "2025-11-09T17:03:55+07:00"
 }

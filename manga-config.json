@@ -21,7 +21,5 @@
   "repoName": "10nenburi",
   "imagePrefix": "Image",
   "imageFormat": "jpg",
-  "lockedChapters": [
-    "13.1"
-  ]
+  "lockedChapters": []
 }

@@ -1,0 +1,282 @@
+{
+  "manga": {
+    "title": "10-Nen Buri ni Saikai shita Kusogaki wa Seijun Bishoujo JK ni Seichou shiteita",
+    "alternativeTitle": "10年ぶりに再会したクソガキは清純美少女JKに成長していた",
+    "cover": "https://raw.githubusercontent.com/nurananto/nuranantoscans/refs/heads/main/covers/10nenburi-254730e0-71bd-4008-9c08-e9d9d1d0989e.webp",
+    "description": "Setelah keluar dari perusahaan black company tempatnya bekerja, Aritsuki Yuu kembali ke kampung halamannya untuk pertama kalinya setelah sepuluh tahun, berniat memulai hidup baru. Suatu hari, seorang gadis SMA misterius yang tampak polos dan cantik datang ke kafe milik keluarganya. Saat Isamu yang gugup menatapnya, gadis itu tiba-tiba berkata, Tebak siapa namaku. Siapa sebenarnya dirimu...!? Kisah komedi romantis penuh kesalahpahaman yang membangkitkan kembali masa muda setelah sepuluh tahun!",
+    "author": "Kanzai Yuki",
+    "artist": "Rokushou Kokuu",
+    "genre": [
+      "Comedy",
+      "Romance",
+      "School Life",
+      "Slice of Life"
+    ],
+    "status": "Ongoing",
+    "views": 0,
+    "links": {
+      "mangadex": "https://mangadex.org/title/26854d1a-dfd0-4e5c-b6d1-ab291035b8cc/10-nen-buri-ni-saikai-shita-kusogaki-wa-seijun-bishoujo-jk-ni-seichou-shiteita",
+      "raw": "https://comic-gardo.com/episode/2550912965031159065"
+    },
+    "repoUrl": "https://raw.githubusercontent.com/nurananto/10nenburi/main/",
+    "imagePrefix": "Image",
+    "imageFormat": "webp",
+    "lockedChapters": [
+      "13.2"
+    ]
+  },
+  "chapters": {
+    "1": {
+      "title": "Chapter 1",
+      "chapter": 1,
+      "folder": "1",
+      "uploadDate": "2025-11-24T08:38:56+07:00",
+      "totalPages": 45,
+      "pages": 45,
+      "locked": false,
+      "views": 0
+    },
+    "2.1": {
+      "title": "Chapter 2.1",
+      "chapter": 2.1,
+      "folder": "2.1",
+      "uploadDate": "2025-11-24T08:38:56+07:00",
+      "totalPages": 15,
+      "pages": 15,
+      "locked": false,
+      "views": 0
+    },
+    "2.2": {
+      "title": "Chapter 2.2",
+      "chapter": 2.2,
+      "folder": "2.2",
+      "uploadDate": "2025-11-24T08:38:56+07:00",
+      "totalPages": 15,
+      "pages": 15,
+      "locked": false,
+      "views": 0
+    },
+    "3.1": {
+      "title": "Chapter 3.1",
+      "chapter": 3.1,
+      "folder": "3.1",
+      "uploadDate": "2025-11-24T08:38:56+07:00",
+      "totalPages": 12,
+      "pages": 12,
+      "locked": false,
+      "views": 0
+    },
+    "3.2": {
+      "title": "Chapter 3.2",
+      "chapter": 3.2,
+      "folder": "3.2",
+      "uploadDate": "2025-11-24T08:38:56+07:00",
+      "totalPages": 12,
+      "pages": 12,
+      "locked": false,
+      "views": 0
+    },
+    "4.1": {
+      "title": "Chapter 4.1",
+      "chapter": 4.1,
+      "folder": "4.1",
+      "uploadDate": "2025-11-24T08:38:56+07:00",
+      "totalPages": 10,
+      "pages": 10,
+      "locked": false,
+      "views": 0
+    },
+    "4.2": {
+      "title": "Chapter 4.2",
+      "chapter": 4.2,
+      "folder": "4.2",
+      "uploadDate": "2025-11-24T08:38:56+07:00",
+      "totalPages": 10,
+      "pages": 10,
+      "locked": false,
+      "views": 0
+    },
+    "5.1": {
+      "title": "Chapter 5.1",
+      "chapter": 5.1,
+      "folder": "5.1",
+      "uploadDate": "2025-11-24T08:38:56+07:00",
+      "totalPages": 10,
+      "pages": 10,
+      "locked": false,
+      "views": 0
+    },
+    "5.2": {
+      "title": "Chapter 5.2",
+      "chapter": 5.2,
+      "folder": "5.2",
+      "uploadDate": "2025-11-24T08:38:56+07:00",
+      "totalPages": 10,
+      "pages": 10,
+      "locked": false,
+      "views": 0
+    },
+    "6.1": {
+      "title": "Chapter 6.1",
+      "chapter": 6.1,
+      "folder": "6.1",
+      "uploadDate": "2025-11-24T08:38:56+07:00",
+      "totalPages": 10,
+      "pages": 10,
+      "locked": false,
+      "views": 0
+    },
+    "6.2": {
+      "title": "Chapter 6.2",
+      "chapter": 6.2,
+      "folder": "6.2",
+      "uploadDate": "2025-11-24T08:38:56+07:00",
+      "totalPages": 10,
+      "pages": 10,
+      "locked": false,
+      "views": 0
+    },
+    "7.1": {
+      "title": "Chapter 7.1",
+      "chapter": 7.1,
+      "folder": "7.1",
+      "uploadDate": "2025-11-24T08:38:56+07:00",
+      "totalPages": 11,
+      "pages": 11,
+      "locked": false,
+      "views": 0
+    },
+    "7.2": {
+      "title": "Chapter 7.2",
+      "chapter": 7.2,
+      "folder": "7.2",
+      "uploadDate": "2025-11-24T08:38:56+07:00",
+      "totalPages": 10,
+      "pages": 10,
+      "locked": false,
+      "views": 0
+    },
+    "8.1": {
+      "title": "Chapter 8.1",
+      "chapter": 8.1,
+      "folder": "8.1",
+      "uploadDate": "2025-11-24T08:38:56+07:00",
+      "totalPages": 10,
+      "pages": 10,
+      "locked": false,
+      "views": 0
+    },
+    "8.2": {
+      "title": "Chapter 8.2",
+      "chapter": 8.2,
+      "folder": "8.2",
+      "uploadDate": "2025-11-24T08:38:56+07:00",
+      "totalPages": 10,
+      "pages": 10,
+      "locked": false,
+      "views": 0
+    },
+    "9.1": {
+      "title": "Chapter 9.1",
+      "chapter": 9.1,
+      "folder": "9.1",
+      "uploadDate": "2025-11-24T08:38:56+07:00",
+      "totalPages": 10,
+      "pages": 10,
+      "locked": false,
+      "views": 0
+    },
+    "9.2": {
+      "title": "Chapter 9.2",
+      "chapter": 9.2,
+      "folder": "9.2",
+      "uploadDate": "2025-11-24T08:38:56+07:00",
+      "totalPages": 10,
+      "pages": 10,
+      "locked": false,
+      "views": 0
+    },
+    "10.1": {
+      "title": "Chapter 10.1",
+      "chapter": 10.1,
+      "folder": "10.1",
+      "uploadDate": "2025-11-24T08:38:56+07:00",
+      "totalPages": 10,
+      "pages": 10,
+      "locked": false,
+      "views": 0
+    },
+    "10.2": {
+      "title": "Chapter 10.2",
+      "chapter": 10.2,
+      "folder": "10.2",
+      "uploadDate": "2025-11-24T08:38:56+07:00",
+      "totalPages": 10,
+      "pages": 10,
+      "locked": false,
+      "views": 0
+    },
+    "11.1": {
+      "title": "Chapter 11.1",
+      "chapter": 11.1,
+      "folder": "11.1",
+      "uploadDate": "2025-11-24T08:38:56+07:00",
+      "totalPages": 10,
+      "pages": 10,
+      "locked": false,
+      "views": 0
+    },
+    "11.2": {
+      "title": "Chapter 11.2",
+      "chapter": 11.2,
+      "folder": "11.2",
+      "uploadDate": "2025-11-24T08:38:56+07:00",
+      "totalPages": 10,
+      "pages": 10,
+      "locked": false,
+      "views": 0
+    },
+    "12.1": {
+      "title": "Chapter 12.1",
+      "chapter": 12.1,
+      "folder": "12.1",
+      "uploadDate": "2025-11-24T08:38:56+07:00",
+      "totalPages": 10,
+      "pages": 10,
+      "locked": false,
+      "views": 0
+    },
+    "12.2": {
+      "title": "Chapter 12.2",
+      "chapter": 12.2,
+      "folder": "12.2",
+      "uploadDate": "2025-11-24T08:38:56+07:00",
+      "totalPages": 10,
+      "pages": 10,
+      "locked": false,
+      "views": 0
+    },
+    "13.1": {
+      "title": "Chapter 13.1",
+      "chapter": 13.1,
+      "folder": "13.1",
+      "uploadDate": "2025-11-24T08:38:56+07:00",
+      "totalPages": 10,
+      "pages": 10,
+      "locked": false,
+      "views": 0
+    },
+    "13.2": {
+      "title": "Chapter 13.2",
+      "chapter": 13.2,
+      "folder": "13.2",
+      "uploadDate": "2025-11-24T08:39:44+07:00",
+      "totalPages": 0,
+      "pages": 0,
+      "locked": true,
+      "views": 0
+    }
+  },
+  "lastUpdated": "2025-11-24T08:39:44+07:00",
+  "lastChapterUpdate": "2025-11-24T08:39:44+07:00"
+}

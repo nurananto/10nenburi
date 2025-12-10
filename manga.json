@@ -13,7 +13,7 @@
       "Slice of Life"
     ],
     "status": "Ongoing",
-    "views": 466,
+    "views": 481,
     "links": {
       "mangadex": "https://mangadex.org/title/26854d1a-dfd0-4e5c-b6d1-ab291035b8cc/10-nen-buri-ni-saikai-shita-kusogaki-wa-seijun-bishoujo-jk-ni-seichou-shiteita",
       "raw": "https://comic-gardo.com/episode/2550912965031159065"
@@ -34,7 +34,7 @@
       "totalPages": 45,
       "pages": 45,
       "locked": false,
-      "views": 71
+      "views": 76
     },
     "2.1": {
       "title": "Chapter 2.1",
@@ -204,7 +204,7 @@
       "totalPages": 10,
       "pages": 10,
       "locked": false,
-      "views": 16
+      "views": 17
     },
     "10.2": {
       "title": "Chapter 10.2",
@@ -214,7 +214,7 @@
       "totalPages": 10,
       "pages": 10,
       "locked": false,
-      "views": 14
+      "views": 15
     },
     "11.1": {
       "title": "Chapter 11.1",
@@ -224,7 +224,7 @@
       "totalPages": 10,
       "pages": 10,
       "locked": false,
-      "views": 17
+      "views": 18
     },
     "11.2": {
       "title": "Chapter 11.2",
@@ -234,7 +234,7 @@
       "totalPages": 10,
       "pages": 10,
       "locked": false,
-      "views": 19
+      "views": 20
     },
     "12.1": {
       "title": "Chapter 12.1",
@@ -244,7 +244,7 @@
       "totalPages": 10,
       "pages": 10,
       "locked": false,
-      "views": 23
+      "views": 24
     },
     "12.2": {
       "title": "Chapter 12.2",
@@ -254,7 +254,7 @@
       "totalPages": 10,
       "pages": 10,
       "locked": false,
-      "views": 35
+      "views": 37
     },
     "13.1": {
       "title": "Chapter 13.1",
@@ -264,7 +264,7 @@
       "totalPages": 10,
       "pages": 10,
       "locked": false,
-      "views": 122
+      "views": 124
     },
     "13.2": {
       "title": "Chapter 13.2",
@@ -274,7 +274,7 @@
       "totalPages": 10,
       "pages": 10,
       "locked": false,
-      "views": 161
+      "views": 165
     },
     "14.1": {
       "title": "Chapter 14.1",
@@ -287,6 +287,6 @@
       "views": 29
     }
   },
-  "lastUpdated": "2025-12-10T00:16:19+07:00",
+  "lastUpdated": "2025-12-11T00:17:52+07:00",
   "lastChapterUpdate": "2025-11-28T17:21:31+07:00"
 }

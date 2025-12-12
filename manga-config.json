@@ -1,4 +1,5 @@
 {
+  "type": "manga",
   "title": "10-Nen Buri ni Saikai shita Kusogaki wa Seijun Bishoujo JK ni Seichou shiteita",
   "alternativeTitle": "10年ぶりに再会したクソガキは清純美少女JKに成長していた",
   "cover": "https://cdn.nuranantoscans.my.id/covers/10nenburi-254730e0-71bd-4008-9c08-e9d9d1d0989e.webp",
@@ -11,7 +12,8 @@
     "School Life",
     "Slice of Life"
   ],
-  "status": "Ongoing",
+  "status": "ONGOING",
+  "endChapter": null,
   "views": 0,
   "links": {
     "mangadex": "https://mangadex.org/title/26854d1a-dfd0-4e5c-b6d1-ab291035b8cc/10-nen-buri-ni-saikai-shita-kusogaki-wa-seijun-bishoujo-jk-ni-seichou-shiteita",

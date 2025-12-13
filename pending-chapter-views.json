@@ -1,89 +1,89 @@
 {
   "chapters": {
     "1": {
-      "pendingViews": 4,
+      "pendingViews": 0,
       "lastIncrement": "2025-12-13T14:32:52.648Z",
-      "lastUpdate": "2025-12-13T00:14:35+07:00"
+      "lastUpdate": "2025-12-13T21:33:04+07:00"
     },
     "2.1": {
-      "pendingViews": 1,
+      "pendingViews": 0,
       "lastIncrement": "2025-12-13T04:50:37.680Z",
-      "lastUpdate": "2025-12-12T00:21:40+07:00"
+      "lastUpdate": "2025-12-13T21:33:04+07:00"
     },
     "2.2": {
-      "pendingViews": 1,
+      "pendingViews": 0,
       "lastIncrement": "2025-12-13T04:53:00.995Z",
-      "lastUpdate": "2025-12-12T00:21:40+07:00"
+      "lastUpdate": "2025-12-13T21:33:04+07:00"
     },
     "3.1": {
-      "pendingViews": 1,
+      "pendingViews": 0,
       "lastIncrement": "2025-12-13T04:55:36.167Z",
-      "lastUpdate": "2025-12-12T00:21:40+07:00"
+      "lastUpdate": "2025-12-13T21:33:04+07:00"
     },
     "3.2": {
-      "pendingViews": 1,
+      "pendingViews": 0,
       "lastIncrement": "2025-12-13T04:56:40.213Z",
-      "lastUpdate": "2025-12-12T00:21:40+07:00"
+      "lastUpdate": "2025-12-13T21:33:04+07:00"
     },
     "4.1": {
-      "pendingViews": 1,
+      "pendingViews": 0,
       "lastIncrement": "2025-12-13T04:57:51.432Z",
-      "lastUpdate": "2025-12-12T00:21:40+07:00"
+      "lastUpdate": "2025-12-13T21:33:04+07:00"
     },
     "4.2": {
-      "pendingViews": 1,
+      "pendingViews": 0,
       "lastIncrement": "2025-12-13T04:58:42.026Z",
-      "lastUpdate": "2025-12-12T00:21:40+07:00"
+      "lastUpdate": "2025-12-13T21:33:04+07:00"
     },
     "5.1": {
-      "pendingViews": 1,
+      "pendingViews": 0,
       "lastIncrement": "2025-12-13T04:59:08.251Z",
-      "lastUpdate": "2025-12-12T00:21:40+07:00"
+      "lastUpdate": "2025-12-13T21:33:04+07:00"
     },
     "5.2": {
-      "pendingViews": 1,
+      "pendingViews": 0,
       "lastIncrement": "2025-12-13T05:00:57.117Z",
-      "lastUpdate": "2025-12-12T00:21:40+07:00"
+      "lastUpdate": "2025-12-13T21:33:04+07:00"
     },
     "6.1": {
-      "pendingViews": 1,
+      "pendingViews": 0,
       "lastIncrement": "2025-12-13T05:04:05.709Z",
-      "lastUpdate": "2025-12-12T00:21:40+07:00"
+      "lastUpdate": "2025-12-13T21:33:04+07:00"
     },
     "6.2": {
-      "pendingViews": 1,
+      "pendingViews": 0,
       "lastIncrement": "2025-12-13T05:05:05.291Z",
-      "lastUpdate": "2025-12-12T00:21:40+07:00"
+      "lastUpdate": "2025-12-13T21:33:04+07:00"
     },
     "7.1": {
-      "pendingViews": 1,
+      "pendingViews": 0,
       "lastIncrement": "2025-12-13T05:06:59.083Z",
-      "lastUpdate": "2025-12-12T00:21:40+07:00"
+      "lastUpdate": "2025-12-13T21:33:04+07:00"
     },
     "7.2": {
-      "pendingViews": 2,
+      "pendingViews": 0,
       "lastIncrement": "2025-12-13T09:31:30.171Z",
-      "lastUpdate": "2025-12-12T00:21:40+07:00"
+      "lastUpdate": "2025-12-13T21:33:04+07:00"
     },
     "8.1": {
-      "pendingViews": 2,
+      "pendingViews": 0,
       "lastIncrement": "2025-12-13T09:32:04.955Z",
-      "lastUpdate": "2025-12-12T00:21:40+07:00"
+      "lastUpdate": "2025-12-13T21:33:04+07:00"
     },
     "8.2": {
-      "pendingViews": 2,
+      "pendingViews": 0,
       "lastIncrement": "2025-12-13T09:34:04.764Z",
-      "lastUpdate": "2025-12-12T00:21:40+07:00"
+      "lastUpdate": "2025-12-13T21:33:04+07:00"
     },
     "9.1": {
-      "pendingViews": 3,
+      "pendingViews": 0,
       "lastIncrement": "2025-12-13T09:35:45.357Z",
-      "lastUpdate": "2025-12-12T00:21:40+07:00"
+      "lastUpdate": "2025-12-13T21:33:04+07:00"
     },
     "9.2": {
-      "pendingViews": 2,
+      "pendingViews": 0,
       "lastIncrement": "2025-12-13T09:37:30.902Z",
-      "lastUpdate": "2025-12-12T00:21:40+07:00"
+      "lastUpdate": "2025-12-13T21:33:04+07:00"
     },
     "10.1": {
       "pendingViews": 0,
@@ -111,25 +111,30 @@
       "lastUpdate": "2025-12-12T00:21:40+07:00"
     },
     "12.2": {
-      "pendingViews": 1,
+      "pendingViews": 0,
       "lastIncrement": "2025-12-13T02:45:03.645Z",
-      "lastUpdate": "2025-12-12T00:21:40+07:00"
+      "lastUpdate": "2025-12-13T21:33:04+07:00"
     },
     "13.1": {
-      "pendingViews": 1,
+      "pendingViews": 0,
       "lastIncrement": "2025-12-13T12:49:46.541Z",
-      "lastUpdate": "2025-12-13T00:14:35+07:00"
+      "lastUpdate": "2025-12-13T21:33:04+07:00"
     },
     "13.2": {
-      "pendingViews": 13,
+      "pendingViews": 0,
       "lastIncrement": "2025-12-13T14:23:32.055Z",
-      "lastUpdate": "2025-12-13T00:14:35+07:00"
+      "lastUpdate": "2025-12-13T21:33:04+07:00"
     },
     "14.1": {
-      "pendingViews": 5,
+      "pendingViews": 0,
       "lastIncrement": "2025-12-13T14:28:05.887Z",
-      "lastUpdate": "2025-12-13T00:14:35+07:00"
+      "lastUpdate": "2025-12-13T21:33:04+07:00"
+    },
+    "14.2": {
+      "pendingViews": 0,
+      "lastIncrement": "2025-12-13T21:33:04+07:00",
+      "lastUpdate": "2025-12-13T21:33:04+07:00"
     }
   },
-  "lastUpdated": "2025-12-13T00:14:35+07:00"
+  "lastUpdated": "2025-12-13T21:33:04+07:00"
 }

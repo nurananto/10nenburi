@@ -3,16 +3,18 @@
   "upload_date": "2025-12-29 11:19:45",
   "total_pages": 11,
   "pages": [
-    "https://cdn.nuranantoscans.my.id/10nenburi/14.2/Image01.webp",
-    "https://cdn.nuranantoscans.my.id/10nenburi/14.2/Image02.webp",
-    "https://cdn.nuranantoscans.my.id/10nenburi/14.2/Image03.webp",
-    "https://cdn.nuranantoscans.my.id/10nenburi/14.2/Image04.webp",
-    "https://cdn.nuranantoscans.my.id/10nenburi/14.2/Image05.webp",
-    "https://cdn.nuranantoscans.my.id/10nenburi/14.2/Image06.webp",
-    "https://cdn.nuranantoscans.my.id/10nenburi/14.2/Image07.webp",
-    "https://cdn.nuranantoscans.my.id/10nenburi/14.2/Image08.webp",
-    "https://cdn.nuranantoscans.my.id/10nenburi/14.2/Image09.webp",
-    "https://cdn.nuranantoscans.my.id/10nenburi/14.2/Image10.webp",
-    "https://cdn.nuranantoscans.my.id/10nenburi/14.2/Image11.webp"
-  ]
+    "b12b789b6077018adec84f233ae76525:85547452dfcc1ae108f91c28b36a360ce7e36a34325bdfd2246402b8bd23856405f104817f2a48e9ad36830b9ec184ac039c9dbb20d515d5ce915623def5f633",
+    "0ea0bad1d687d858c88fed3b66dff851:d5b0b1fc57f240ffbb7efd838d4bef93375c864d66c88765dd7e8bb913baeee1567d0c070d801d057c105d8570514836035bb3599f3d05f34da0a371152fb654",
+    "5a494c746dcc81d3c1fa1d24ac667c23:437d53dcb7fffd9ff3d5b386d8884d6e2e39e7bb774a9659684e820d1f2d4750a7b95780aa3b0939cbc1493871c6400830cc4d92e428069b6ae5a46b3d7ece24",
+    "d97da768e4dcda5e4fb8e44d3e9bc0d7:5973ef89d4761a055336d4c689ff382b75ed6d103582f511866cd46d529eac0c8af53762b56c778539571b2c6a80708423b02b06b27db9b994b46676746042f3",
+    "5530c9bce605a051f1772b99e2c8e348:dfafd0115023dcdd80428ce2fcb947212aeb1a26a984a61e0637a6621a11c6c5fe3d19f893545162faa7fbf2861427741badb9bb107f41e349bb15660975fef6",
+    "2c0af345a2b9a64c7982f20f41a0571c:11fac0a8d9fe06929f885086b5a1f785073b049096c656be6fefddc77a3de9c524d7fa01744f1e45c7e655769689404121ab5eddcb3442e8fc45f1851d629da0",
+    "90c991bdcd0d8fbbe4c40bf576bd8c57:95bdddccf1fe5c50e70cdb644945274faee3a8074a29f2db10e8a94a6ab4f596b8c68df472348cc871f9d70adb0d9f5b1480e7024886e3267db29214372219bb",
+    "8d49ae293c9da5e40ed73f2e256e0b05:b41d3473984f9f6fdd3bcfb167eb457c0a1c02156c701999bcc0cde7944b9cf79ef5a3d5db5ecf066ad889859511a1a2e587416ec4b0ddd358e6ede8bf3d0f83",
+    "7c3032b8e779479d6c225395cf83a10b:69d712087786b80de161030f1caf328371821652e9966c89facd6d4544faeb52333d502b28aa7584ea325c8631bcd7f719bda8f060edf14f8c65daf6f70d6a6d",
+    "072a7416fa1151001a7a4cfa431dbe67:7c875c8b4a9dbe95b719aa2cac606c44d293efb84890078c9f97a071b823e5bc0a28f9a86b6e91b1bee6882399686951b41fbf9bb798bb4b2adc237db15763d0",
+    "4529a98c53df106fa9ed68a52bccfebd:9a6a6ca23b7f888f459817d6619a95282a469e3cd895da0fbcb92d752b9968f9b2e980777766b48af51a5b959fe6b501ee4541d88c7379119fcb0ab3b01aee5e"
+  ],
+  "encrypted": true,
+  "encryption_version": "1.0"
 }

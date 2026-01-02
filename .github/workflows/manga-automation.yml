@@ -51,10 +51,6 @@ jobs:
           CLOUDFLARE_WORKER_URL: ${{ secrets.CLOUDFLARE_WORKER_URL }}
         run: node manga-automation.js generate
 
-
-      - name: 🔄 Sync chapters
-        run: node manga-automation.js sync
-
       - name: 📊 Update manga views
         run: node manga-automation.js update-views
 

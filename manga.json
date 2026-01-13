@@ -13,7 +13,7 @@
       "Slice of Life"
     ],
     "status": "ONGOING",
-    "views": 1514,
+    "views": 1517,
     "links": {
       "mangadex": "https://mangadex.org/title/26854d1a-dfd0-4e5c-b6d1-ab291035b8cc/10-nen-buri-ni-saikai-shita-kusogaki-wa-seijun-bishoujo-jk-ni-seichou-shiteita",
       "raw": "https://comic-gardo.com/episode/2550912965031159065"
@@ -22,7 +22,6 @@
     "imagePrefix": "Image",
     "imageFormat": "webp",
     "lockedChapters": [
-      "15.1",
       "15.2"
     ],
     "type": "manga"
@@ -305,7 +304,7 @@
       "uploadDate": "2026-01-01T10:37:41+07:00",
       "totalPages": 10,
       "pages": 10,
-      "locked": true,
+      "locked": false,
       "views": 154
     },
     "15.2": {
@@ -319,6 +318,6 @@
       "views": 70
     }
   },
-  "lastUpdated": "2026-01-14T00:21:54+07:00",
+  "lastUpdated": "2026-01-14T00:26:55+07:00",
   "lastChapterUpdate": "2026-01-02T15:35:25+07:00"
 }

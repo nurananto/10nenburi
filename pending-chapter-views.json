@@ -126,24 +126,24 @@
       "lastUpdate": "2026-01-20T00:19:31+07:00"
     },
     "14.1": {
-      "pendingViews": 1,
+      "pendingViews": 0,
       "lastIncrement": "2026-01-20T22:10:20.559Z",
-      "lastUpdate": "2026-01-20T00:19:31+07:00"
+      "lastUpdate": "2026-01-23T00:24:05+07:00"
     },
     "14.2": {
-      "pendingViews": 1,
+      "pendingViews": 0,
       "lastIncrement": "2026-01-20T11:08:18.472Z",
-      "lastUpdate": "2026-01-20T00:19:31+07:00"
+      "lastUpdate": "2026-01-23T00:24:05+07:00"
     },
     "15.1": {
-      "pendingViews": 26,
+      "pendingViews": 0,
       "lastIncrement": "2026-01-22T15:39:52.688Z",
-      "lastUpdate": "2026-01-20T00:19:31+07:00"
+      "lastUpdate": "2026-01-23T00:24:05+07:00"
     },
     "15.2": {
-      "pendingViews": 9,
+      "pendingViews": 0,
       "lastIncrement": "2026-01-22T14:42:58.150Z",
-      "lastUpdate": "2026-01-20T00:19:31+07:00"
+      "lastUpdate": "2026-01-23T00:24:05+07:00"
     }
   },
   "lastUpdated": "2026-01-01T00:13:36+07:00"

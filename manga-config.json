@@ -24,10 +24,6 @@
   "imagePrefix": "Image",
   "imageFormat": "webp",
   "lockedChapters": [
-<<<<<<< Updated upstream
-    "15.2"
-=======
     "16.1"
->>>>>>> Stashed changes
   ]
 }

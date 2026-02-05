@@ -13,7 +13,7 @@
       "Slice of Life"
     ],
     "status": "ONGOING",
-    "views": 1973,
+    "views": 1982,
     "links": {
       "mangadex": "https://mangadex.org/title/26854d1a-dfd0-4e5c-b6d1-ab291035b8cc/10-nen-buri-ni-saikai-shita-kusogaki-wa-seijun-bishoujo-jk-ni-seichou-shiteita",
       "raw": "https://comic-gardo.com/episode/2550912965031159065"
@@ -215,7 +215,7 @@
       "totalPages": 10,
       "pages": 10,
       "locked": false,
-      "views": 65
+      "views": 66
     },
     "11.1": {
       "title": "Chapter 11.1",
@@ -225,7 +225,7 @@
       "totalPages": 10,
       "pages": 10,
       "locked": false,
-      "views": 68
+      "views": 69
     },
     "11.2": {
       "title": "Chapter 11.2",
@@ -235,7 +235,7 @@
       "totalPages": 10,
       "pages": 10,
       "locked": false,
-      "views": 72
+      "views": 73
     },
     "12.1": {
       "title": "Chapter 12.1",
@@ -245,7 +245,7 @@
       "totalPages": 10,
       "pages": 10,
       "locked": false,
-      "views": 79
+      "views": 81
     },
     "12.2": {
       "title": "Chapter 12.2",
@@ -255,7 +255,7 @@
       "totalPages": 10,
       "pages": 10,
       "locked": false,
-      "views": 103
+      "views": 107
     },
     "13.1": {
       "title": "Chapter 13.1",
@@ -265,7 +265,7 @@
       "totalPages": 10,
       "pages": 10,
       "locked": false,
-      "views": 198
+      "views": 199
     },
     "13.2": {
       "title": "Chapter 13.2",
@@ -275,7 +275,7 @@
       "totalPages": 10,
       "pages": 10,
       "locked": false,
-      "views": 291
+      "views": 292
     },
     "14.1": {
       "title": "Chapter 14.1",
@@ -285,7 +285,7 @@
       "totalPages": 11,
       "pages": 11,
       "locked": false,
-      "views": 320
+      "views": 321
     },
     "14.2": {
       "title": "Chapter 14.2",
@@ -295,7 +295,7 @@
       "totalPages": 11,
       "pages": 11,
       "locked": false,
-      "views": 306
+      "views": 308
     },
     "15.1": {
       "title": "Chapter 15.1",
@@ -305,7 +305,7 @@
       "totalPages": 10,
       "pages": 10,
       "locked": false,
-      "views": 387
+      "views": 389
     },
     "15.2": {
       "title": "Chapter 15.2",
@@ -315,7 +315,7 @@
       "totalPages": 10,
       "pages": 10,
       "locked": false,
-      "views": 196
+      "views": 199
     },
     "16.1": {
       "title": "Chapter 16.1",
@@ -325,9 +325,9 @@
       "totalPages": 12,
       "pages": 12,
       "locked": true,
-      "views": 63
+      "views": 64
     }
   },
-  "lastUpdated": "2026-02-05T00:40:46+07:00",
+  "lastUpdated": "2026-02-06T00:42:16+07:00",
   "lastChapterUpdate": "2026-01-25T11:16:19+07:00"
 }

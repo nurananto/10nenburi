@@ -1,29 +1,29 @@
 {
   "chapters": {
     "1": {
-      "pendingViews": 5,
+      "pendingViews": 0,
       "lastIncrement": "2026-02-07T17:17:21.187Z",
-      "lastUpdate": "2026-02-07T00:37:04+07:00"
+      "lastUpdate": "2026-02-08T00:21:38+07:00"
     },
     "2.1": {
-      "pendingViews": 3,
+      "pendingViews": 0,
       "lastIncrement": "2026-02-07T03:41:49.966Z",
-      "lastUpdate": "2026-02-06T17:21:53+07:00"
+      "lastUpdate": "2026-02-08T00:21:38+07:00"
     },
     "2.2": {
-      "pendingViews": 1,
+      "pendingViews": 0,
       "lastIncrement": "2026-02-07T03:42:54.741Z",
-      "lastUpdate": "2026-02-05T00:40:46+07:00"
+      "lastUpdate": "2026-02-08T00:21:38+07:00"
     },
     "3.1": {
-      "pendingViews": 2,
+      "pendingViews": 0,
       "lastIncrement": "2026-02-07T04:04:53.009Z",
-      "lastUpdate": "2026-02-05T00:40:46+07:00"
+      "lastUpdate": "2026-02-08T00:21:38+07:00"
     },
     "3.2": {
-      "pendingViews": 1,
+      "pendingViews": 0,
       "lastIncrement": "2026-02-07T04:05:30.407Z",
-      "lastUpdate": "2026-02-05T00:40:46+07:00"
+      "lastUpdate": "2026-02-08T00:21:38+07:00"
     },
     "4.1": {
       "pendingViews": 0,
@@ -136,24 +136,24 @@
       "lastUpdate": "2026-02-07T00:37:04+07:00"
     },
     "15.1": {
-      "pendingViews": 4,
+      "pendingViews": 0,
       "lastIncrement": "2026-02-07T15:02:36.918Z",
-      "lastUpdate": "2026-02-07T00:37:04+07:00"
+      "lastUpdate": "2026-02-08T00:21:38+07:00"
     },
     "15.2": {
-      "pendingViews": 9,
+      "pendingViews": 0,
       "lastIncrement": "2026-02-07T16:36:23.210Z",
-      "lastUpdate": "2026-02-07T00:37:04+07:00"
+      "lastUpdate": "2026-02-08T00:21:38+07:00"
     },
     "16.1": {
-      "pendingViews": 15,
+      "pendingViews": 0,
       "lastIncrement": "2026-02-07T15:57:40.366Z",
-      "lastUpdate": "2026-02-07T00:37:04+07:00"
+      "lastUpdate": "2026-02-08T00:21:38+07:00"
     },
     "16.2": {
-      "pendingViews": 3,
+      "pendingViews": 0,
       "lastIncrement": "2026-02-07T17:15:41.158Z",
-      "lastUpdate": "2026-02-07T00:37:04+07:00"
+      "lastUpdate": "2026-02-08T00:21:38+07:00"
     }
   },
   "lastUpdated": "2026-01-01T00:13:36+07:00"

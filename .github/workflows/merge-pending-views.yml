@@ -3,6 +3,9 @@ name: Merge Pending Views
 on:
   workflow_dispatch: # Hanya manual trigger - jalankan sekali saat diperlukan
 
+permissions:
+  contents: write
+
 jobs:
   merge-views:
     runs-on: ubuntu-latest

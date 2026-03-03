@@ -13,9 +13,7 @@
 | Author | Kanzai Yuki |
 | Artist | Rokushou Kokuu |
 | Tipe | Manga (Hitam Putih) |
-| Status | Ongoing |
 | Genre | Comedy · Romance · School Life · Slice of Life |
-| Chapter | 32 chapter (1 locked) |
 
 ## Link
 
